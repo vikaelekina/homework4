@@ -28,4 +28,4 @@ jobs:
           deploy_key: ${{secrets.ACTIONS_DEPLOY_KEY}}
           PERSONAL_TOKEN: ${{secrets.GITHUB_TOKEN}}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: target/allure-history
+          PUBLISH_DIR: target/allure-results
