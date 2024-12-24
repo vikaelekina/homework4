@@ -1,4 +1,4 @@
-name:
+name: Run tests
 
 on:
   push
@@ -18,7 +18,7 @@ jobs:
         uses: simple-elf/allure-report-action@master
         id: allure-report
         with:
-          allure_results: target/allure-result
+          allure_results: target/allure-results
           gh_pages: gh-pages
           allure-report: target/allure-report
           allure-history: target/allure-history
