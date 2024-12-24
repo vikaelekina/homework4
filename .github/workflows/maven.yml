@@ -20,12 +20,12 @@ jobs:
         with:
           allure_results: target/allure-results
           gh_pages: gh-pages
-          allure-report: target/allure-report
-          allure-history: target/allure-history
+          allure_report: target/allure-report
+          allure_history: target/allure-history
       - name: "Создание ветки gh-pages, содержащей allure report"
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{secrets.ACTIONS_DEPLOY_KEY}}
           PERSONAL_TOKEN: ${{secrets.GITHUB_TOKEN}}
           PUBLISH_BRANCH: gh-pages
-          PUBLISH_DIR: target/allure-results
+          PUBLISH_DIR: target/allure-history
